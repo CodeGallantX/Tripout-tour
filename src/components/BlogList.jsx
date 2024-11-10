@@ -1,13 +1,13 @@
-import blogs from '../data/blogs.json';
+ import blogs from '../data/blogs.json';
 import { Link } from 'react-router-dom';
 
 const BlogList = () => {
     return (
-        <div className="px-5 md:px-10 lg:px-20 xl:px-36 py-10 lg:py-20">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <div>
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-1 gap-8 mt-8">
                 {blogs.map((blog, index) => (
                     <div key={index} className="w-full h-auto">
-                        <div className="group flex flex-col md:flex-row lg:flex-col border-2 border-gray-200 border-opacity-60 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300">
+                        <div className="group flex flex-col lg:flex-row border-2 border-gray-200 border-opacity-60 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300">
                             <a href={blog.url} className="w-full md:w-1/2 lg:w-full overflow-hidden">
                                 <img
                                     className="h-48 md:h-full lg:h-60 w-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-in-out"
