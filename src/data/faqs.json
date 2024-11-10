@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What should I pack for my trip?",
+        "answer": "Pack according to the weather, activities, and culture of your destination. Essentials include clothing, toiletries, a power bank, and any required documents."
+    },
+    {
+        "question": "What types of accommodations are available?",
+        "answer": "We offer a variety of accommodations including hotels, hostels, guesthouses, and vacation rentals. You can choose based on your preferences and budget."
+    },
+    {
+        "question": "What documents do I need to travel?",
+        "answer": "You'll need a valid passport, visa (if applicable), travel insurance, and any additional documents like vaccinations or permits depending on your destination."
+    },
+    {
+        "question": "Is travel insurance recommended?",
+        "answer": "Yes, travel insurance is recommended to cover unexpected events like medical emergencies, trip cancellations, or lost baggage during your trip."
+    },
+    {
+        "question": "What currency is used at my destination?",
+        "answer": "Check the local currency of the destination, as it can vary. Many countries also accept credit cards, but it's advisable to carry some local currency for small expenses."
+    }
+]

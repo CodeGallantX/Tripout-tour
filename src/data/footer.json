@@ -1,0 +1,42 @@
+[
+    {
+        "link": "Home",
+        "url": "/"
+    },
+    {
+        "link": "About Us",
+        "url": "#about"
+    },
+    {
+        "link": "Services",
+        "url": "#services"
+    },
+    {
+        "link": "Destinations",
+        "url": "/destinations"
+    },
+    {
+        "link": "Blog",
+        "url": "/blog"
+    },
+    {
+        "link": "Contact Us",
+        "url": "/contact"
+    },
+    {
+        "link": "FAQ",
+        "url": "#faq"
+    },
+    {
+        "link": "Team",
+        "url": "#team"
+    },
+    {
+        "link": "Terms & Conditions",
+        "url": "#"
+    },
+    {
+        "link": "Privacy Policy",
+        "url": "#"
+    }
+]

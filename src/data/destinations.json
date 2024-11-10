@@ -1,0 +1,26 @@
+[
+    {
+        "country": "Greece",
+        "url": "https://media.istockphoto.com/id/475124388/photo/white-church-in-oia-town-on-santorini-island-in-greece.jpg?s=612x612&w=0&k=20&c=_0Hy2MgqVTE2qCtyU8-0_zTZSnib7cCSmp2y2T9Mrw4=",
+        "visits": "6,719",
+        "rating": "4.9"
+    },
+    {
+        "country": "Dubai, UAE",
+        "url": "https://media.istockphoto.com/id/1154761064/photo/the-palm-island-panorama-with-dubai-marina-in-the-background-aerial.jpg?s=612x612&w=0&k=20&c=CypnNYt7O98dz20Vogn4IOhJD79nTFBMRC8pH4Ddgd0=",
+        "visits": "8,955",
+        "rating": "4.9"
+    },
+    {
+        "country": "Paris",
+        "url": "https://media.istockphoto.com/id/1436430810/photo/paris-eiffel-tower.jpg?s=612x612&w=0&k=20&c=twnPoKvqoTpraJNYTNrLBKASWjExRQMxoY9XPkHWJFQ=",
+        "visits": "9,256",
+        "rating": "4.9"
+    },
+    {
+        "country": "Switzerland",
+        "url": "https://media.istockphoto.com/id/1370346385/photo/amazing-mountain-ridge-view-from-the-mannlichen-station-grindelwald-switzerland.jpg?s=612x612&w=0&k=20&c=GUD6Lf3JeHR_u-2lxlyr665iig91ZsMJOqgAJR6WNn8=",
+        "visits": "4,637",
+        "rating": "4.9"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "image": "https://media.istockphoto.com/id/2135911536/photo/profile-view-of-a-retired-asian-hiker-at-muriwai-beach.jpg?s=612x612&w=0&k=20&c=sogSTPGKfe1szb2EpUtnwde2dAWOJawR9GLd7xGgXCI=",
+        "name": "Jim Deric",
+        "date": "Sep 20, 2024",
+        "rating": "5.0",
+        "review": "My trip was absolutely unforgettable! The itinerary was perfectly planned, the accommodations were luxurious, and the guides were incredibly knowledgeable. I highly recommend this travel agency for amazing experiences!"
+    },
+    {
+        "image": "https://media.istockphoto.com/id/1497148194/photo/portrait-city-and-happy-business-man-for-outdoor-travel-career-or-job-mindset-and-happiness.jpg?s=612x612&w=0&k=20&c=EUWzwcDnZ05UxTS0i5tN3q-n0UfEjvm5xx9JdGoArmE=",
+        "name": "Michael Roberts",
+        "date": "Oct 16, 2024",
+        "rating": "5.0",
+        "review": "I had a fantastic journey with this travel company! Every detail was taken care of, and the customer service was exceptional. I can't wait to book my next adventure with them!"
+    },
+    {
+        "image": "",
+        "name": "Emily Davis",
+        "date": "Nov 3, 2024",
+        "rating": "5.0",
+        "review": "The tour exceeded my expectations in every way! Beautiful destinations, comfortable lodging, and the friendly staff made this trip enjoyable. I'll definitely be recommending this travel service to all my friends and family!"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "day": "Day 1",
+        "location": "Airport Pickup & Arrival",
+        "description": "Arrive at the airport and transfer to the hotel. Spend the evening relaxing or take a leisurely walk around the local area to get familiar with your surroundings."
+    },
+    {
+        "day": "Day 2",
+        "location": "Temples & River Cruise",
+        "description": "Visit historic temples and immerse yourself in local culture. Later, enjoy a scenic river cruise, with stunning views of the surrounding landscapes."
+    },
+    {
+        "day": "Day 3",
+        "location": "Local Market Visits",
+        "description": "Explore vibrant local markets where you can shop for traditional crafts, fresh produce, and souvenirs. Take in the sights, sounds, and smells of the marketplace."
+    },
+    {
+        "day": "Day 4",
+        "location": "Adventure Activities",
+        "description": "Get your adrenaline pumping with exciting outdoor activities, such as hiking through lush trails, and experiencing thrilling river rafting or zip-lining."
+    },
+    {
+        "day": "Day 5",
+        "location": "Airport Pickup & Departure",
+        "description": "After checking out of the hotel, transfer to the airport for your flight back home. Reflect on your unforgettable experiences from the trip."
+    }
+]
