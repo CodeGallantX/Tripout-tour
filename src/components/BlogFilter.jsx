@@ -1,9 +1,8 @@
 const BlogFilter = () => {
   return (
-    <div className="w-1/3 hidden lg:block ml-auto p-4 bg-white shadow-lg rounded-lg mt-6">
+    <div className="w-2/3 hidden lg:block ml-auto p-4 mt-6">
       <form action="" method="get" className="flex flex-col gap-6">
-        {/* Search Input */}
-        <div>
+        <div className="b-orange-100 rounded-xl">
           <label htmlFor="search" className="block text-sm font-medium text-gray-700">
             Search Blogs
           </label>
@@ -16,8 +15,7 @@ const BlogFilter = () => {
           />
         </div>
 
-        {/* Category Section */}
-        <div>
+        <div className="bg-orange-100 rounded-xl">
           <h3 className="text-lg font-semibold text-gray-800">Categories</h3>
           <ul className="mt-2 space-y-1">
             <li><a href="#" className="text-blue-600 hover:underline">Tech</a></li>
@@ -27,8 +25,7 @@ const BlogFilter = () => {
           </ul>
         </div>
 
-        {/* Recent Blogs Section */}
-        <div>
+        <div className="bg-orange-100 rounded-xl">
           <h3 className="text-lg font-semibold text-gray-800">Recent Blogs</h3>
           <ul className="mt-2 space-y-1">
             <li><a href="#" className="text-gray-700 hover:text-blue-600 hover:underline">How to Improve Your Coding Skills</a></li>
@@ -37,8 +34,8 @@ const BlogFilter = () => {
           </ul>
         </div>
 
-        {/* Destinations Section */}
-        <div>
+        
+        <div className="bg-orange-100">
           <h3 className="text-lg font-semibold text-gray-800">Destinations</h3>
           <ul className="mt-2 space-y-1">
             <li><a href="#" className="text-blue-600 hover:underline">Europe</a></li>
