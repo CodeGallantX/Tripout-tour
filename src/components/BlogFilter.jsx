@@ -12,7 +12,7 @@ const BlogFilter = () => {
             id="search"
             name="search"
             placeholder="Search by title..."
-            className="mt-1 block w-full px-4 py-2 bg-orange-100 placeholder:text-gray-700 text-sm border border-orange-300 rounded-full focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+            className="mt-1 block w-full px-4 py-2 bg-orange-100 placeholder:text-gray-700 text-sm border border-orange-300 rounded-full focus:outline-none focus:ring-[#F7921E] focus:border-[#F7921E]"
           />
         </div>
 
@@ -49,10 +49,10 @@ const BlogFilter = () => {
         <div className="bg-orange-100 rounded-xl p-4">
           <h3 className="text-lg font-semibold text-gray-800">Tags</h3>
           <div className="flex flex-wrap gap-2 mt-2 text-sm text-gray-600">
-            <a href="#" className="px-3 py-1 bg-none border border-orange-300 text-sm rounded-full hover:bg-orange-500 hover:text-white">coding</a>
-            <a href="#" className="px-3 py-1 bg-none border border-orange-300 text-sm rounded-full hover:bg-orange-500 hover:text-white">travel</a>
-            <a href="#" className="px-3 py-1 bg-none border border-orange-300 text-sm rounded-full hover:bg-orange-500 hover:text-white">health</a>
-            <a href="#" className="px-3 py-1 bg-none border border-orange-300 text-sm rounded-full hover:bg-orange-500 hover:text-white">lifestyle</a>
+            <a href="#" className="px-3 py-1 bg-none border border-orange-300 text-sm rounded-full hover:bg-[#F7921E] hover:text-white">coding</a>
+            <a href="#" className="px-3 py-1 bg-none border border-orange-300 text-sm rounded-full hover:bg-[#F7921E] hover:text-white">travel</a>
+            <a href="#" className="px-3 py-1 bg-none border border-orange-300 text-sm rounded-full hover:bg-[#F7921E] hover:text-white">health</a>
+            <a href="#" className="px-3 py-1 bg-none border border-orange-300 text-sm rounded-full hover:bg-[#F7921E] hover:text-white">lifestyle</a>
           </div>
         </div>
 
@@ -85,7 +85,7 @@ const BlogFilter = () => {
             id="search"
             name="search"
             placeholder="Search by title..."
-            className="block w-full px-4 py-2 bg-orange-100 placeholder:text-gray-700 text-sm border border-orange-300 rounded-lg focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+            className="block w-full px-4 py-2 bg-orange-100 placeholder:text-gray-700 text-sm border border-orange-300 rounded-lg focus:outline-none focus:ring-[#F7921E] focus:border-[#F7921E]"
           />
           </div>
           <div>
