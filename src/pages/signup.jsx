@@ -44,9 +44,9 @@ const App = () => {
         <h1 className='text-4xl lg:text-6xl font-bold text-center'>Create Account</h1>
         <p>Already have an account? <a href="/login" className='text-[#92B76D] hover:text-[#ffca0d] transition duration-300 ease-in-out'>Log in</a></p>
         
-        <form onSubmit={handleSubmit} className='flex flex-col gap-3 lg:gap-6'>
-          <div className="flex flex-row items-center justify-between">
-            <fieldset className="flex flex-col items-start justify-center gap-1">
+        <form onSubmit={handleSubmit} className='flex flex-col gap-3 lg:gap-4'>
+          <div className="flex flex-row items-center justify-between gap-4">
+            <fieldset className="flex flex-col items-start justify-center gap-1 w-full">
               <label className='text-[#222831c6]' htmlFor="firstname">First Name</label>
               <input 
                 className="w-full border border-solid py-3 px-3 rounded border-[#22283170] outline-none focus:ring-1 focus:ring-[#92B76D] text-[#6c8b4c]" 
@@ -59,7 +59,7 @@ const App = () => {
                 required 
               />
             </fieldset>
-            <fieldset className="flex flex-col items-start justify-center gap-1">
+            <fieldset className="flex flex-col items-start justify-center gap-1 w-full">
               <label className='text-[#222831c6]' htmlFor="lastname">Last Name</label>
               <input 
                 className="w-full border border-solid py-3 px-3 rounded border-[#22283170] outline-none focus:ring-1 focus:ring-[#92B76D] text-[#6c8b4c]" 
@@ -88,7 +88,6 @@ const App = () => {
             />
           </fieldset>
 
-          <div className="flex flex-row items-center justify-start gap-12">
             <fieldset className="flex flex-col items-start justify-center gap-1">
               <label className='text-[#222831c6]' htmlFor="tel">Phone number</label>
               <input 
@@ -102,7 +101,6 @@ const App = () => {
                 required 
               />
             </fieldset>
-          </div>
 
           <fieldset className="flex flex-col items-start justify-center gap-1">
             <label className='text-[#222831c6]' htmlFor="password">Password</label>
@@ -135,14 +133,14 @@ const App = () => {
           <div className="flex flex-row items-center justify-between">
             <div className="flex flex-row items-center gap-2">
               <input 
-                className="form-checkbox text-[#92B76D] border border-solid py-3 px-3 rounded border-[#22283170] outline-none focus:ring-1 focus:ring-[#92B76D]" 
+                className="form-checkbox outline-none" 
                 type="checkbox" 
                 name="agree" 
                 id="agree" 
                 checked={formData.agree}
                 onChange={handleChange}
               />
-              <label htmlFor="agree" className="text-[#222831c6]">By checking this box, you agree to comply with our <a className="text-[#92B76D] hover:text-[#ffca0d] transition duration-300 ease-in-out">terms and conditions</a>.</label>
+              <label htmlFor="agree" className="text-[#222831c6]">By checking this box, you agree with our <a className="text-[#92B76D] hover:text-[#ffca0d] transition duration-300 ease-in-out">terms and conditions</a>.</label>
             </div>
           </div>
 
