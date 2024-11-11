@@ -10,7 +10,7 @@ const BlogList = () => {
                         <div className="group flex flex-col lg:flex-row border-2 border-gray-200 border-opacity-60 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300">
                             <a href={blog.url} className="w-full md:w-1/2 lg:w-full overflow-hidden">
                                 <img
-                                    className="h-48 md:h-full lg:h-60 w-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                                    className="h-48 md:h-full lg:h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-in-out"
                                     src={blog.image}
                                     alt={blog.title}
                                     loading="lazy"

@@ -1,6 +1,6 @@
 const BlogFilter = () => {
   return (
-    <div className="max-w-md hidden lg:block w-full ml-auto p-4 bg-white shadow-lg rounded-lg mt-6">
+    <div className="w-1/3 hidden lg:block ml-auto p-4 bg-white shadow-lg rounded-lg mt-6">
       <form action="" method="get" className="flex flex-col gap-6">
         {/* Search Input */}
         <div>

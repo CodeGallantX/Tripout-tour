@@ -17,7 +17,7 @@ const App = () => {
     <div>
       <Header />
       <Banner page={page} />
-      <section className="flex flex-row items-start justify-between px-6 md:px-10 xl:px-36">
+      <section className="flex flex-row items-start justify-between gap-20 px-6 md:px-10 xl:px-36">
         <BlogList />
         <BlogFilter/>
       </section>
