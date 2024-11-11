@@ -2,6 +2,7 @@ import Header from '../components/Header';
 import Banner from '../components/Banner';
 import BlogList from '../components/BlogList';
 import BlogFilter from '../components/BlogFilter';
+import Pagination from '../components/Pagination';
 import Footer from '../components/Footer';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <BlogList />
         <BlogFilter/>
       </section>
+      <Pagination />
       <Footer />
 
     </div>

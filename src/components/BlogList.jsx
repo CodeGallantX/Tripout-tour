@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 const BlogList = () => {
     return (
         <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8 my-8">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 my-8">
                 {blogs.map((blog, index) => (
                     <div key={index} className="w-full h-auto">
-                        <div className="group  flex flex-col lg:h-[250px] lg:flex-row border-2 border-gray-200 border-opacity-60 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300">
-                            <a href={blog.url} className="w-full h-full overflow-hidden">
+                        <div className="group  flex flex-col lg:h-[250px] md:flex-row border-2 border-gray-200 border-opacity-60 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300">
+                            <a href={blog.url} className="w-full md:w-1/2 lg:w-3/5 overflow-hidden">
                                 <img
-                                    className="h-8/12 md:h-full w-full md:w-1/2 lg:w-3/5 object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                                    className="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-in-out"
                                     src={blog.image}
                                     alt={blog.title}
                                     loading="lazy"
@@ -30,7 +30,7 @@ const BlogList = () => {
                                 <h1 className="font-sans text-lg md:text-xl font-bold text-gray-900 mb-4">
                                     {blog.title}
                                 </h1>
-                                <p className="leading-relaxed mb-3 text-sm text-gray-500">
+                                <p className="hidden md:block leading-relaxed mb-3 text-sm text-gray-500">
                                     {blog.intro}
                                 </p>
                                 <hr className="w-full mt-4" />

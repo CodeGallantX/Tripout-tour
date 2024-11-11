@@ -1,7 +1,7 @@
 const BlogFilter = () => {
   return (
     <div>
-    <div className="w-1/3 hidden lg:block ml-auto p-4 mt-6">
+    <div className="w-full hidden lg:block ml-auto p-4 mt-6">
       <form action="" method="get" className="flex flex-col gap-6">
         <div className="bg-orange-100 rounded-xl p-4">
           <label htmlFor="search" className="block text-sm font-bold text-gray-700">
@@ -65,7 +65,8 @@ const BlogFilter = () => {
         </div>
       </form>
     </div>
-    <div className='w-full grid lg:hidden grid-cols-3 items-center gap-2 justify-between p-3 bg-orange-100 rounded-xl'>
+
+    <div className='w-full grid lg:hidden grid-cols-3 items-center gap-2 p-3 bg-orange-100 rounded-xl'>
           <div className="flex flex-row gap-2">
             <a href="#" className="border border-[#f7921e] bg-[#f7921e] rounded-lg p-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="fill-white" viewBox="0 0 256 256">
@@ -78,13 +79,13 @@ const BlogFilter = () => {
               </svg>
             </a>
           </div>
-          <div className="mr-auto">
+          <div className="ml-auto">
           <input
             type="text"
             id="search"
             name="search"
             placeholder="Search by title..."
-            className="mt-1 block w-full px-4 py-2 bg-orange-100 placeholder:text-gray-700 text-sm border border-orange-300 rounded-lg focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+            className="block w-full px-4 py-2 bg-orange-100 placeholder:text-gray-700 text-sm border border-orange-300 rounded-lg focus:outline-none focus:ring-orange-500 focus:border-orange-500"
           />
           </div>
           <div>
