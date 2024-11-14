@@ -77,7 +77,7 @@ const TripCalculator = () => {
               <div>
                 <label className="block font-medium" htmlFor="tripFee">
                   Trip Fee 
-                  <span className="text-red-500 ml-4">*</span>
+                  <span className="text-red-500 ml-1 text-xl">*</span>
                 </label>
                 <input
                   type="number"
