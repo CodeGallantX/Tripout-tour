@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const TripCalculator = () => {
-  const [activeTab, setActiveTab] = useState("trip"); // "trip" or "conversion"
+  const [activeTab, setActiveTab] = useState("trip");
   const [tripFee, setTripFee] = useState("");
   const [savingPeriodMonths, setSavingPeriodMonths] = useState(6);
   const [currency, setCurrency] = useState("USD");
@@ -18,10 +18,9 @@ const TripCalculator = () => {
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
-    setConversionResult(null); // Reset conversion result on tab switch
+    setConversionResult(null);
   };
 
-  // Calculate Trip Savings
   const calculateSavings = (e) => {
     e.preventDefault();
     const fee = parseFloat(tripFee) || 0;
@@ -42,13 +41,11 @@ const TripCalculator = () => {
     });
   };
 
-  // Convert Currency (Using a fixed rate for demonstration)
   const convertCurrency = (e) => {
     e.preventDefault();
     const fixedRates = {
       USD: { EUR: 0.85, GBP: 0.75, NGN: 1700 },
       EUR: { USD: 2.80, GBP: 0.88, NGN: 2100 },
-      // Add more currency pairs as needed
     };
     const rate = fixedRates[conversionFrom]?.[conversionTo] || 1;
     const convertedAmount = (parseFloat(amount) || 0) * rate;
@@ -56,7 +53,7 @@ const TripCalculator = () => {
   };
 
   return (
-    <div className="p-8 bg-orange-100 rounded-lg shadow-lg">
+    <div className="mx-6 md:mx-10 xl:mx-36 p-10 bg-orange-100 rounded-2xl shadow-lg">
       <div className="flex space-x-6 mb-6">
         <button
           onClick={() => handleTabChange("trip")}
@@ -100,14 +97,30 @@ const TripCalculator = () => {
                   id="currency"
                   value={currency}
                   onChange={(e) => setCurrency(e.target.value)}
-                  className="form-select w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#F7921E]"
+                  className="form-select w-full mt-1 p-2 border rounded"
                 >
                   <option value="USD">USD - $</option>
                   <option value="EUR">EUR - €</option>
                   <option value="GBP">GBP - £</option>
                   <option value="NGN">NGN - ₦</option>
-                  {/* Add more options as needed */}
+                  <option value="ZAR">ZAR - R (South African Rand)</option>
+                  <option value="KES">KES - KSh (Kenyan Shilling)</option>
+                  <option value="EGP">EGP - E£ (Egyptian Pound)</option>
+                  <option value="GHS">GHS - ₵ (Ghanaian Cedi)</option>
+                  <option value="TZS">TZS - TSh (Tanzanian Shilling)</option>
+                  <option value="UGX">UGX - UGX (Ugandan Shilling)</option>
+                  <option value="DZD">DZD - د.ج (Algerian Dinar)</option>
+                  <option value="MAD">MAD - د.م. (Moroccan Dirham)</option>
+                  <option value="XOF">XOF - CFA (West African CFA Franc)</option>
+                  <option value="XAF">XAF - CFA (Central African CFA Franc)</option>
+                  <option value="ETB">ETB - Br (Ethiopian Birr)</option>
+                  <option value="ZMW">ZMW - ZK (Zambian Kwacha)</option>
+                  <option value="BWP">BWP - P (Botswana Pula)</option>
+                  <option value="MUR">MUR - ₨ (Mauritian Rupee)</option>
+                  <option value="SCR">SCR - ₨ (Seychellois Rupee)</option>
+                  <option value="NAD">NAD - $ (Namibian Dollar)</option>
                 </select>
+
               </div>
 
               <div className="col-span-2">
@@ -175,29 +188,62 @@ const TripCalculator = () => {
               <div>
                 <label className="block font-medium">From Currency</label>
                 <select
+                  id="currency"
                   value={conversionFrom}
                   onChange={(e) => setConversionFrom(e.target.value)}
-                  className="form-select w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#F7921E]"
+                  className="form-select w-full mt-1 p-2 border rounded"
                 >
-                  <option value="USD">USD</option>
-                  <option value="EUR">EUR</option>
-                  <option value="GBP">GBP</option>
-                  <option value="NGN">NGN</option>
-                  {/* Add more options as needed */}
+                  <option value="USD">USD - $</option>
+                  <option value="EUR">EUR - €</option>
+                  <option value="GBP">GBP - £</option>
+                  <option value="NGN">NGN - ₦</option>
+                  <option value="ZAR">ZAR - R (South African Rand)</option>
+                  <option value="KES">KES - KSh (Kenyan Shilling)</option>
+                  <option value="EGP">EGP - E£ (Egyptian Pound)</option>
+                  <option value="GHS">GHS - ₵ (Ghanaian Cedi)</option>
+                  <option value="TZS">TZS - TSh (Tanzanian Shilling)</option>
+                  <option value="UGX">UGX - UGX (Ugandan Shilling)</option>
+                  <option value="DZD">DZD - د.ج (Algerian Dinar)</option>
+                  <option value="MAD">MAD - د.م. (Moroccan Dirham)</option>
+                  <option value="XOF">XOF - CFA (West African CFA Franc)</option>
+                  <option value="XAF">XAF - CFA (Central African CFA Franc)</option>
+                  <option value="ETB">ETB - Br (Ethiopian Birr)</option>
+                  <option value="ZMW">ZMW - ZK (Zambian Kwacha)</option>
+                  <option value="BWP">BWP - P (Botswana Pula)</option>
+                  <option value="MUR">MUR - ₨ (Mauritian Rupee)</option>
+                  <option value="SCR">SCR - ₨ (Seychellois Rupee)</option>
+                  <option value="NAD">NAD - $ (Namibian Dollar)</option>
                 </select>
+
               </div>
               <div>
                 <label className="block font-medium">To Currency</label>
                 <select
+                  id="currency"
                   value={conversionTo}
                   onChange={(e) => setConversionTo(e.target.value)}
-                  className="form-select w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#F7921E]"
+                  className="form-select w-full mt-1 p-2 border rounded"
                 >
-                  <option value="USD">USD</option>
-                  <option value="EUR">EUR</option>
-                  <option value="GBP">GBP</option>
-                  <option value="NGN">NGN</option>
-                  {/* Add more options as needed */}
+                  <option value="USD">USD - $</option>
+                  <option value="EUR">EUR - €</option>
+                  <option value="GBP">GBP - £</option>
+                  <option value="NGN">NGN - ₦</option>
+                  <option value="ZAR">ZAR - R (South African Rand)</option>
+                  <option value="KES">KES - KSh (Kenyan Shilling)</option>
+                  <option value="EGP">EGP - E£ (Egyptian Pound)</option>
+                  <option value="GHS">GHS - ₵ (Ghanaian Cedi)</option>
+                  <option value="TZS">TZS - TSh (Tanzanian Shilling)</option>
+                  <option value="UGX">UGX - UGX (Ugandan Shilling)</option>
+                  <option value="DZD">DZD - د.ج (Algerian Dinar)</option>
+                  <option value="MAD">MAD - د.م. (Moroccan Dirham)</option>
+                  <option value="XOF">XOF - CFA (West African CFA Franc)</option>
+                  <option value="XAF">XAF - CFA (Central African CFA Franc)</option>
+                  <option value="ETB">ETB - Br (Ethiopian Birr)</option>
+                  <option value="ZMW">ZMW - ZK (Zambian Kwacha)</option>
+                  <option value="BWP">BWP - P (Botswana Pula)</option>
+                  <option value="MUR">MUR - ₨ (Mauritian Rupee)</option>
+                  <option value="SCR">SCR - ₨ (Seychellois Rupee)</option>
+                  <option value="NAD">NAD - $ (Namibian Dollar)</option>
                 </select>
               </div>
             </div>
