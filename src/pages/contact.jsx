@@ -22,7 +22,7 @@ const App = () => {
           <h3 className="text-[18px] font-semibold">HELLO</h3>
           <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold">Get in Touch</h1>
           <p className='text-[18px] w-full lg:w-10/12'>We&rsquo;re here to help! Whether you have a question about our organisation, need assistance, or just want to give feedback, feel free to reach out to us.</p>
-          <div className='flex flex-col text-[18px] lg:text-2xl xl:text-[28px] gap-3'>
+          <div className='flex flex-col text-xl gap-3'>
             <a href="mailto:help@tripout.com" className="flex flex-row items-center group">
               <FaEnvelope />
               <span className="ml-4 group-hover:text-[#92B76D] transition-all duration-300 ease-in-out">help@tripout.com</span>

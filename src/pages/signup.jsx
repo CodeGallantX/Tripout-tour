@@ -7,7 +7,6 @@ const App = () => {
     email: '',
     tel: '',
     password: '',
-    confirmPassword: '',
     agree: false,
   });
 
@@ -27,7 +26,7 @@ const App = () => {
 
   return (
     <div className='lg:grid lg:grid-cols-2'>
-      <div className='hidden lg:block lg:w-5/6 xl:w-11/12 relative h-full bg-gradient-to-tl from-[#92B76D] to-[#ffca0d]'>
+      <div className='hidden lg:block lg:w-5/6 xl:w-11/12 relative h-full bg-gradient-to-tl from-[#F7921E] to-[#24201D]'>
         <div className='absolute w-full opacity-50 h-full bg-green-100 backdrop-blur-3xl'></div>
         <div className='relative text-black top-1/4 left-5'>
           <div className='flex flex-col items-center justify-between gap-10 px-8'>
@@ -42,14 +41,14 @@ const App = () => {
 
       <div className="flex flex-col gap-5 px-16 lg:px-10 xl:px-28 py-12 lg:py-8">
         <h1 className='text-4xl lg:text-6xl font-bold text-center'>Create Account</h1>
-        <p>Already have an account? <a href="/login" className='text-[#92B76D] hover:text-[#ffca0d] transition duration-300 ease-in-out'>Log in</a></p>
+        <p>Already have an account? <a href="/login" className='text-[#F7921E] transition duration-300 ease-in-out'>Log in</a></p>
         
         <form onSubmit={handleSubmit} className='flex flex-col gap-3 lg:gap-4'>
           <div className="flex flex-row items-center justify-between gap-4">
             <fieldset className="flex flex-col items-start justify-center gap-1 w-full">
               <label className='text-[#222831c6]' htmlFor="firstname">First Name</label>
               <input 
-                className="w-full border border-solid py-3 px-3 rounded border-[#22283170] outline-none focus:ring-1 focus:ring-[#92B76D] text-[#6c8b4c]" 
+                className="w-full border border-solid py-3 px-3 rounded border-[#22283170] outline-none focus:ring-1 focus:ring-[#F7921E] text-gray-800" 
                 type="text" 
                 name="firstname" 
                 id="firstname" 
@@ -62,7 +61,7 @@ const App = () => {
             <fieldset className="flex flex-col items-start justify-center gap-1 w-full">
               <label className='text-[#222831c6]' htmlFor="lastname">Last Name</label>
               <input 
-                className="w-full border border-solid py-3 px-3 rounded border-[#22283170] outline-none focus:ring-1 focus:ring-[#92B76D] text-[#6c8b4c]" 
+                className="w-full border border-solid py-3 px-3 rounded border-[#22283170] outline-none focus:ring-1 focus:ring-[#F7921E] text-gray-800" 
                 type="text" 
                 name="lastname" 
                 id="lastname" 
@@ -77,7 +76,7 @@ const App = () => {
           <fieldset className="flex flex-col items-start justify-center gap-1">
             <label className='text-[#222831c6]' htmlFor="email">Email Address</label>
             <input 
-              className="w-full border border-solid py-3 px-3 rounded border-[#22283170] outline-none focus:ring-1 focus:ring-[#92B76D] text-[#6c8b4c]" 
+              className="w-full border border-solid py-3 px-3 rounded border-[#22283170] outline-none focus:ring-1 focus:ring-[#F7921E] text-gray-800" 
               type="email" 
               name="email" 
               id="email" 
@@ -91,7 +90,7 @@ const App = () => {
             <fieldset className="flex flex-col items-start justify-center gap-1">
               <label className='text-[#222831c6]' htmlFor="tel">Phone number</label>
               <input 
-                className="w-full border border-solid py-3 px-3 rounded border-[#22283170] outline-none focus:ring-1 focus:ring-[#92B76D] text-[#6c8b4c]" 
+                className="w-full border border-solid py-3 px-3 rounded border-[#22283170] outline-none focus:ring-1 focus:ring-[#F7921E] text-gray-800" 
                 type="tel" 
                 name="tel" 
                 id="tel" 
@@ -105,26 +104,12 @@ const App = () => {
           <fieldset className="flex flex-col items-start justify-center gap-1">
             <label className='text-[#222831c6]' htmlFor="password">Password</label>
             <input 
-              className="w-full border border-solid py-3 px-3 rounded border-[#22283170] outline-none focus:ring-1 focus:ring-[#92B76D] text-[#6c8b4c]" 
+              className="w-full border border-solid py-3 px-3 rounded border-[#22283170] outline-none focus:ring-1 focus:ring-[#F7921E] text-gray-800" 
               type="password" 
               name="password" 
               id="password" 
               placeholder='Enter password' 
               value={formData.password}
-              onChange={handleChange}
-              required
-            />
-          </fieldset>
-
-          <fieldset className="flex flex-col items-start justify-center gap-1">
-            <label className='text-[#222831c6]' htmlFor="confirmPassword">Confirm Password</label>
-            <input 
-              className="w-full border border-solid py-3 px-3 rounded border-[#22283170] outline-none focus:ring-1 focus:ring-[#92B76D] text-[#6c8b4c]" 
-              type="password" 
-              name="confirmPassword" 
-              id="confirmPassword" 
-              placeholder='Re-enter password' 
-              value={formData.confirmPassword}
               onChange={handleChange}
               required
             />
@@ -140,11 +125,11 @@ const App = () => {
                 checked={formData.agree}
                 onChange={handleChange}
               />
-              <label htmlFor="agree" className="text-[#222831c6]">By checking this box, you agree with our <a className="text-[#92B76D] hover:text-[#ffca0d] transition duration-300 ease-in-out">terms and conditions</a>.</label>
+              <label htmlFor="agree" className="text-[#222831c6]">By checking this box, you agree with our <a className="text-[#F7921E] transition duration-300 ease-in-out">terms and conditions</a>.</label>
             </div>
           </div>
 
-          <button className='mt-6 w-full bg-[#92B76D] hover:bg-[#ffca0d] transition duration-300 ease-in-out text-white py-3 rounded' type="submit">
+          <button className='mt-6 w-full bg-[#F7921E] hover:bg-[#ffca0d] transition duration-300 ease-in-out text-white py-3 rounded' type="submit">
             Create Account
           </button>
         </form>
@@ -158,10 +143,6 @@ const App = () => {
                     <a href="#" className="w-full flex flex-row items-center justify-center gap-2 hover:bg-blue-100 px-2 py-3 rounded-full bg-transparent border border-solid border-blue-500">
                         <img src="https://ik.imagekit.io/mshcgnjju/EkoStudy/Google-icon.png" alt="Google Icon" width={20} height={20} />
                         <span>Continue with Google</span>
-                    </a>
-                    <a href="#" className="w-full flex flex-row items-center justify-center gap-2 hover:bg-gray-100 px-2 py-3 rounded-full bg-transparent border border-solid border-gray-500">
-                    <img src="https://ik.imagekit.io/mshcgnjju/EkoStudy/Apple_logo_grey.svg.png?updatedAt=1727884280423" alt="Apple Icon"  width={20} height={20} />
-                        <span>Continue with Apple</span>
                     </a>
                 </div>
             </div>

@@ -17,7 +17,6 @@ const Header = () => {
             <header className="absolute w-full z-30 bg-transparent flex items-center justify-between px-6 md:px-10 xl:px-36 py-6">
                 <Logo />
 
-                {/* Desktop Navigation */}
                 <nav className="hidden lg:flex items-center gap-8 text-sm font-medium">
                     <Link to="/" className={`${isActiveLink('/')}`}>Home</Link>
                     <Link to="/about" className={`${isActiveLink('/about')}`}>About Us</Link>

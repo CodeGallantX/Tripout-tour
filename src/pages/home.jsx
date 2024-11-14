@@ -3,6 +3,7 @@ import Destinations from '../components/Destinations';
 import About from '../components/About';
 import Tours from '../components/Tours';
 import Process from '../components/Process';
+import Calculator from '../components/Calculator';
 import Stories from '../components/Stories';
 import Services from '../components/Services';
 import Stats from '../components/Stats';
@@ -18,6 +19,7 @@ const App = () => {
             <About />
             <Tours />
             <Process />
+            <Calculator />
             <Stories />
             <Services />
             <Stats />
