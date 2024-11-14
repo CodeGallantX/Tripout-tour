@@ -53,17 +53,17 @@ const TripCalculator = () => {
   };
 
   return (
-    <div className="mx-6 md:mx-10 xl:mx-36 p-10 bg-orange-100 rounded-2xl shadow-lg">
-      <div className="flex space-x-6 mb-6">
+    <div className="mx-6 md:mx-10 xl:mx-36 p-10 md:p-14 bg-orange-100 ring ring-orange-50 rounded-2xl shadow-lg my-24">
+      <div className="flex space-x-6 mb-16">
         <button
           onClick={() => handleTabChange("trip")}
-          className={`px-6 py-3 rounded-md transition-all duration-300 ${activeTab === "trip" ? "bg-[#F7921E] text-white" : "bg-orange-50 text-gray-700"}`}
+          className={`px-6 py-3 rounded-t-2xl rounded-b-lg transition-all text-sm duration-300 ${activeTab === "trip" ? "bg-[#F7921E] text-white" : "bg-gray-50 text-gray-700"}`}
         >
           Trip Calculator
         </button>
         <button
           onClick={() => handleTabChange("conversion")}
-          className={`px-6 py-3 rounded-md transition-all duration-300 ${activeTab === "conversion" ? "bg-[#F7921E] text-white" : "bg-orange-50 text-gray-700"}`}
+          className={`px-6 py-3 rounded-t-2xl rounded-b-lg transition-all text-sm duration-300 ${activeTab === "conversion" ? "bg-[#F7921E] text-white" : "bg-gray-50 text-gray-700"}`}
         >
           Currency Conversion
         </button>
@@ -71,12 +71,13 @@ const TripCalculator = () => {
 
       {activeTab === "trip" ? (
         <div>
-          <h3 className="text-start mb-4 font-semibold text-xl">Trip Fee Calculator</h3>
+          <h3 className="text-start mb-4 font-semibold text-xl lg:text-3xl">Trip Fee Calculator</h3>
           <form onSubmit={calculateSavings} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label className="block font-medium" htmlFor="tripFee">
-                  Trip Fee (required)
+                  Trip Fee 
+                  <span className="text-red-500 ml-4">*</span>
                 </label>
                 <input
                   type="number"
@@ -84,7 +85,7 @@ const TripCalculator = () => {
                   value={tripFee}
                   onChange={(e) => setTripFee(e.target.value)}
                   placeholder="0"
-                  className="form-input w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#F7921E]"
+                  className="form-input w-full mt-1 py-2 px-4 h-14 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#F7921E]"
                   required
                 />
               </div>
@@ -97,7 +98,7 @@ const TripCalculator = () => {
                   id="currency"
                   value={currency}
                   onChange={(e) => setCurrency(e.target.value)}
-                  className="form-select w-full mt-1 p-2 border rounded"
+                  className="form-select w-full mt-1 h-14 py-2 px-4 border rounded-full"
                 >
                   <option value="USD">USD - $</option>
                   <option value="EUR">EUR - €</option>
@@ -141,7 +142,7 @@ const TripCalculator = () => {
 
             <button
               type="submit"
-              className="w-full mt-6 py-3 rounded-md text-white bg-[#F7921E] hover:bg-[#e67e22] transition-all"
+              className="w-full mt-6 py-3 rounded-full text-white bg-[#F7921E] hover:bg-[#e67e22] transition-all"
             >
               Calculate
             </button>
@@ -181,7 +182,7 @@ const TripCalculator = () => {
                   value={amount}
                   onChange={(e) => setAmount(e.target.value)}
                   placeholder="0"
-                  className="form-input w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#F7921E]"
+                  className="form-input w-full mt-1 py-2 px-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#F7921E]"
                   required
                 />
               </div>
@@ -191,7 +192,7 @@ const TripCalculator = () => {
                   id="currency"
                   value={conversionFrom}
                   onChange={(e) => setConversionFrom(e.target.value)}
-                  className="form-select w-full mt-1 p-2 border rounded"
+                  className="form-select w-full mt-1 py-2 px-3 h-14 border rounded-full"
                 >
                   <option value="USD">USD - $</option>
                   <option value="EUR">EUR - €</option>
@@ -222,7 +223,7 @@ const TripCalculator = () => {
                   id="currency"
                   value={conversionTo}
                   onChange={(e) => setConversionTo(e.target.value)}
-                  className="form-select w-full mt-1 p-2 border rounded"
+                  className="form-select w-full mt-1 py-2 px-3 h-14 border rounded-full"
                 >
                   <option value="USD">USD - $</option>
                   <option value="EUR">EUR - €</option>
@@ -260,7 +261,7 @@ const TripCalculator = () => {
             <div className="mt-8 p-6 bg-white rounded-lg shadow">
               <h3 className="font-semibold text-lg mb-4">Converted Amount</h3>
               <p className="text-[#F7921E] font-semibold">
-                {conversionFrom} {amount} is approximately {conversionTo} {conversionResult}
+                {conversionFrom} {amount} <span className="text-gray-700">is approximately</span> {conversionTo} {conversionResult}
               </p>
             </div>
           )}
