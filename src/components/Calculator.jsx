@@ -9,16 +9,12 @@ const TripCalculator = () => {
   const [conversionTo, setConversionTo] = useState("EUR");
   const [amount, setAmount] = useState("");
   const [conversionResult, setConversionResult] = useState(null);
-  const [result, setResult] = useState({
-    daily: 0,
-    weekly: 0,
-    monthly: 0,
-    yearly: 0,
-  });
+  const [result, setResult] = useState(null);
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
     setConversionResult(null);
+    setResult(null);
   };
 
   const calculateSavings = (e) => {
@@ -121,7 +117,6 @@ const TripCalculator = () => {
                   <option value="SCR">SCR - ₨ (Seychellois Rupee)</option>
                   <option value="NAD">NAD - $ (Namibian Dollar)</option>
                 </select>
-
               </div>
 
               <div className="col-span-2">
@@ -148,27 +143,29 @@ const TripCalculator = () => {
             </button>
           </form>
 
-          <div className="mt-8 p-6 bg-white rounded-lg shadow">
-            <h3 className="font-semibold text-lg mb-4">Required Savings</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <h5 className="font-medium mb-2">Daily Savings</h5>
-                <p className="text-[#F7921E] font-semibold">{currency} {result.daily} per day</p>
-              </div>
-              <div>
-                <h5 className="font-medium mb-2">Weekly Savings</h5>
-                <p className="text-[#F7921E] font-semibold">{currency} {result.weekly} per week</p>
-              </div>
-              <div>
-                <h5 className="font-medium mb-2">Monthly Savings</h5>
-                <p className="text-[#F7921E] font-semibold">{currency} {result.monthly} per month</p>
-              </div>
-              <div>
-                <h5 className="font-medium mb-2">Yearly Savings</h5>
-                <p className="text-[#F7921E] font-semibold">{currency} {result.yearly} per year</p>
+          {result && (
+            <div className="mt-8 p-6 bg-white rounded-lg shadow">
+              <h3 className="font-semibold text-lg mb-4">Required Savings</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h5 className="font-medium mb-2">Daily Savings</h5>
+                  <p className="text-[#F7921E] font-semibold">{currency} {result.daily} per day</p>
+                </div>
+                <div>
+                  <h5 className="font-medium mb-2">Weekly Savings</h5>
+                  <p className="text-[#F7921E] font-semibold">{currency} {result.weekly} per week</p>
+                </div>
+                <div>
+                  <h5 className="font-medium mb-2">Monthly Savings</h5>
+                  <p className="text-[#F7921E] font-semibold">{currency} {result.monthly} per month</p>
+                </div>
+                <div>
+                  <h5 className="font-medium mb-2">Yearly Savings</h5>
+                  <p className="text-[#F7921E] font-semibold">{currency} {result.yearly} per year</p>
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       ) : (
         <div>
@@ -189,10 +186,9 @@ const TripCalculator = () => {
               <div>
                 <label className="block font-medium">From Currency</label>
                 <select
-                  id="currency"
                   value={conversionFrom}
                   onChange={(e) => setConversionFrom(e.target.value)}
-                  className="form-select w-full mt-1 py-2 px-3 h-14 border rounded-full"
+                  className="form-select w-full mt-1 h-14 py-2 px-4 border rounded-full"
                 >
                   <option value="USD">USD - $</option>
                   <option value="EUR">EUR - €</option>
@@ -215,15 +211,13 @@ const TripCalculator = () => {
                   <option value="SCR">SCR - ₨ (Seychellois Rupee)</option>
                   <option value="NAD">NAD - $ (Namibian Dollar)</option>
                 </select>
-
               </div>
               <div>
                 <label className="block font-medium">To Currency</label>
                 <select
-                  id="currency"
                   value={conversionTo}
                   onChange={(e) => setConversionTo(e.target.value)}
-                  className="form-select w-full mt-1 py-2 px-3 h-14 border rounded-full"
+                  className="form-select w-full mt-1 h-14 py-2 px-4 border rounded-full"
                 >
                   <option value="USD">USD - $</option>
                   <option value="EUR">EUR - €</option>
@@ -248,10 +242,9 @@ const TripCalculator = () => {
                 </select>
               </div>
             </div>
-
             <button
               type="submit"
-              className="w-full mt-6 py-3 rounded-md text-white bg-[#F7921E] hover:bg-[#e67e22] transition-all"
+              className="w-full mt-6 py-3 rounded-full text-white bg-[#F7921E] hover:bg-[#e67e22] transition-all"
             >
               Convert
             </button>
@@ -259,9 +252,9 @@ const TripCalculator = () => {
 
           {conversionResult && (
             <div className="mt-8 p-6 bg-white rounded-lg shadow">
-              <h3 className="font-semibold text-lg mb-4">Converted Amount</h3>
+              <h3 className="font-semibold text-lg mb-4">Conversion Result</h3>
               <p className="text-[#F7921E] font-semibold">
-                {conversionFrom} {amount} <span className="text-gray-700">is approximately</span> {conversionTo} {conversionResult}
+                {amount} {conversionFrom} = {conversionResult} {conversionTo}
               </p>
             </div>
           )}
