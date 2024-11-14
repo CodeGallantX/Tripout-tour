@@ -56,17 +56,17 @@ const TripCalculator = () => {
   };
 
   return (
-    <div className="p-8 bg-gray-50 rounded-lg shadow-lg">
+    <div className="p-8 bg-orange-100 rounded-lg shadow-lg">
       <div className="flex space-x-6 mb-6">
         <button
           onClick={() => handleTabChange("trip")}
-          className={`px-6 py-3 rounded-md transition-all duration-300 ${activeTab === "trip" ? "bg-[#F7921E] text-white" : "bg-gray-300 text-gray-700"}`}
+          className={`px-6 py-3 rounded-md transition-all duration-300 ${activeTab === "trip" ? "bg-[#F7921E] text-white" : "bg-orange-50 text-gray-700"}`}
         >
           Trip Calculator
         </button>
         <button
           onClick={() => handleTabChange("conversion")}
-          className={`px-6 py-3 rounded-md transition-all duration-300 ${activeTab === "conversion" ? "bg-[#F7921E] text-white" : "bg-gray-300 text-gray-700"}`}
+          className={`px-6 py-3 rounded-md transition-all duration-300 ${activeTab === "conversion" ? "bg-[#F7921E] text-white" : "bg-orange-50 text-gray-700"}`}
         >
           Currency Conversion
         </button>
@@ -134,7 +134,7 @@ const TripCalculator = () => {
             </button>
           </form>
 
-          <div className="mt-8 p-6 bg-white rounded-lg shadow-md">
+          <div className="mt-8 p-6 bg-white rounded-lg shadow">
             <h3 className="font-semibold text-lg mb-4">Required Savings</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
@@ -211,7 +211,7 @@ const TripCalculator = () => {
           </form>
 
           {conversionResult && (
-            <div className="mt-8 p-6 bg-white rounded-lg shadow-md">
+            <div className="mt-8 p-6 bg-white rounded-lg shadow">
               <h3 className="font-semibold text-lg mb-4">Converted Amount</h3>
               <p className="text-[#F7921E] font-semibold">
                 {conversionFrom} {amount} is approximately {conversionTo} {conversionResult}
