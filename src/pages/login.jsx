@@ -14,11 +14,11 @@ const App = () => {
       <div className='hidden lg:block lg:w-5/6 xl:w-11/12 relative h-screen bg-gradient-to-tl from-[#F7921E] to-[#24201D]'>
         <div className='absolute w-full opacity-50 h-screen bg-green-100  backdrop-blur-3xl'></div>
         <div className='relative text-black top-1/4 left-5'>
-          <div className='flex flex-col items-center justify-between gap-10 px-8'>
-            <a href='/' className="text-4xl text-left font-bold">Tripout</a>
+          <div className='flex flex-col items-start justify-between gap-10 px-2'>
+            <a href='/' className="text-4xl text-center font-bold">Tripout</a>
             <div className="gap-2 ">
-              <blockquote className="text-left text-3xl =">&ldquo;Success is not final, failure is not fatal: It is the courage to continue that counts.&rdquo;</blockquote>
-              <em className='text-right text-lg'>— Winston Churchill</em>
+              <blockquote className="text-left text-8xl">&ldquo;Explore. <br/> Dream. <br/> Discover.&rdquo;</blockquote>
+              <em className='text-right text-lg'>— Mark Twain</em>
             </div>
           </div>
         </div>
