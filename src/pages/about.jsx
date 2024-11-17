@@ -2,10 +2,10 @@ import Header from '../components/Header';
 import AboutIntro from '../components/AboutIntro';
 import TrendingDestinations from '../components/TrendingDestinations';
 import Banner from '../components/Banner';
-import Footer from '../components/Footer';
-import About from '../components/About';
-import Process from '../components/Process';
+import Team from '../components/Team';
+import OfferBanner from '../components/OfferBanner';
 import Digital from '../components/Digital';
+import Footer from '../components/Footer';
 
 const App = () => {
 
@@ -22,8 +22,8 @@ const App = () => {
             <Banner page={page}/>
             <AboutIntro />
             <TrendingDestinations />
-            <About />
-            <Process />
+            <Team />
+            <OfferBanner />
             <Digital />
             <Footer />
         </div>

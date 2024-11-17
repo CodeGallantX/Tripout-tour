@@ -17,7 +17,7 @@ const TrendingDestinations = () => {
                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
                                 {trends.map((destination, index) => (
                                     <div key={index}>
-                                        <div className="group flex flex-row items-center justify-center gap-4 py-6 px-6 lg:px-10 border border-gray-400 hover:bg-white rounded-xl hover:border-none hover:shadow-lg cursor-pointer transition-all duration-200 ease">
+                                        <div className="group flex flex-row items-center justify-start gap-4 py-4 px-6 min-w-md border border-gray-400 hover:bg-white rounded-xl hover:border-none hover:shadow-lg cursor-pointer transition-all duration-200 ease">
                                             <div className=" w-24 h-24">
                                                 <img className="rounded-full w-full h-full object-cover object-center group-hover:ring-2 ring-[#f7921e] transition-all duration-300 ease-in-out" src={destination.image} alt={destination.name} />
                                             </div>

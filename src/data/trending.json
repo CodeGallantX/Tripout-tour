@@ -1,42 +1,42 @@
 [
     {
-        "image":"",
-        "name": "Miami",
+        "image":"https://www.planetware.com/wpimages/2022/10/africa-best-places-to-visit-take-beach-vacation-watamu-kenyas-swahili-coast-turtle-beach.jpg",
+        "name": "Kenya",
         "visits": "4,874"
     },
     {
-        "image":"",
-        "name": "Singapore",
+        "image":"https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-cape-town-south-africa.jpg",
+        "name": "Cape Town",
         "visits": "5,784"
     },
     {
-        "image":"",
-        "name": "Goa",
+        "image":"https://media.istockphoto.com/id/1484126874/photo/five-cowrie-creek.jpg?s=612x612&w=0&k=20&c=hzTp7Q2MmTHMrHwc9eDGKqyG03Nx6HIlafoJvpJZtQ0=",
+        "name": "Lagos",
         "visits": "8,748"
     },
     {
-        "image":"",
-        "name": "Tokyo",
+        "image":"https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-back-in-time-zanzibar-tanzania.jpg",
+        "name": "Zanzibar",
         "visits": "2,987"
     },
     {
-        "image":"",
-        "name": "Bali",
+        "image":"https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-experience-victoria-falls-zimbabwe-zambia.jpg",
+        "name": "Zambezi",
         "visits": "9,987"
     },
     {
-        "image":"",
-        "name": "Roma",
+        "image":"https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-wander-souks-marrakesh-morocco.jpg",
+        "name": "Morocco",
         "visits": "6,874"
     },
     {
-        "image":"",
-        "name": "Paris",
+        "image":"https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-beach-vacation-bazaruto-archipelago-mozambique.jpg",
+        "name": "Mozambique",
         "visits": "2,984"
     },
     {
-        "image":"",
-        "name": "Greece",
+        "image":"https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-traverse-okavango-delta-botswana.jpg",
+        "name": "Botswana",
         "visits": "3,698"
     }
 ]

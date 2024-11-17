@@ -2,9 +2,9 @@ const AboutIntro = () => {
     return (
         <div>
             <section id="aboutIntro" className="px-10 xl:px-36 py-20">
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-10">
                     <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-0">
-                        <div className="w-full lg:w-8/12 flex flex-col items-start justify-center gap-4">
+                        <div className="w-full lg:w-8/12 flex flex-col items-start justify-center gap-5">
                             <h4 className="font-bold text-[#F7921E] font-serif">
                                 <img src="/airplane.png" alt="icon" className="inline-block translate-y-0.5" />
                                 &nbsp;What We Offer</h4>
@@ -24,7 +24,7 @@ const AboutIntro = () => {
             className="object-cover object-left w-full h-[60vh] md:h-[550px] rounded-2xl"
             alt="hero"
             loading='lazy'
-            src="https://media.gettyimages.com/id/1308867983/photo/brecon-beacons-landscape.jpg?s=612x612&w=0&k=20&c=GsbYnKwpqpEMQ4FPtZG5DFGMAcoOVlPSd_R38RlXNNE="
+            src="/about-banner.jpeg"
           />
                     </div>
                 </div>
