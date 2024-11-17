@@ -21,25 +21,25 @@ const TrendingDestinations = () => {
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                                 {members.map((member, index) => (
                                     <div key={index} className="relative group">
-                                        <div className="relative flex flex-col items-center justify-center p-4 rounded-xl border border-gray-400 gap-4 hover:shadow-lg transition-all duration-300 ease-in-out">
+                                        <div className="relative flex flex-col items-center cursor-pointer justify-center p-10 rounded-xl border border-gray-400 gap-1 hover:shadow-lg transition-all duration-300 ease-in-out">
                                             <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full" />
-                                            <h3 className="font-serif font-bold text-xl">{member.name}</h3>
-                                            <span className="text-sm text-gray-700">{member.role}</span>
+                                            <h3 className="font-serif font-bold text-xl text-center">{member.name}</h3>
+                                            <span className="text-sm text-gray-700 text-center">{member.role}</span>
 
-                                            <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center gap-4 transition-all duration-300 rounded-xl">
-                                                <div className="flex gap-4">
+                                            <div className="absolute bg-black opacity-0 w-1/4 h-1/4 group-hover:opacity-80 group-hover:w-full group-hover:h-full flex flex-col justify-center items-center gap-4 transition-all duration-300 rounded-xl">
+                                                <div className="flex gap-4 z-20">
                                                     {member.linkedin && (
-                                                        <Link to={member.linkedin} className="text-white">
+                                                        <Link to={member.linkedin} className="text-white translate-y-10 group-hover:translate-y-0 transition-all duration-500 delay-50 ease-in-out ">
                                                             <FaLinkedin size={24} />
                                                         </Link>
                                                     )}
                                                     {member.facebook && (
-                                                        <Link to={member.facebook} className="text-white">
+                                                        <Link to={member.facebook} className="text-white translate-y-10 group-hover:translate-y-0 transition-all duration-500 delay-100 ease-in-out ">
                                                             <FaFacebook size={24} />
                                                         </Link>
                                                     )}
                                                     {member.instagram && (
-                                                        <Link to={member.instagram} className="text-white">
+                                                        <Link to={member.instagram} className="text-white translate-y-10 group-hover:translate-y-0 transition-all duration-500 delay-200 ease-in-out ">
                                                             <FaInstagram size={24} />
                                                         </Link>
                                                     )}
