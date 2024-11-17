@@ -1,4 +1,5 @@
 import Header from '../components/Header';
+import AboutIntro from '../components/AboutIntro';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import About from '../components/About';
@@ -18,6 +19,7 @@ const App = () => {
         <div>
             <Header />
             <Banner page={page}/>
+            <AboutIntro />
             <About />
             <Process />
             <Digital />
