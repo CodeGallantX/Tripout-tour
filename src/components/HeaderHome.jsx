@@ -10,7 +10,6 @@ const Header = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
 
-    // Function to check if the current route is the same as the link's route
     const isActiveLink = (path) => location.pathname === path ? 'text-[#F7921E]' : 'text-white';
 
     return (
@@ -18,7 +17,6 @@ const Header = () => {
             <header className="absolute w-full z-30 bg-transparent flex items-center justify-between px-6 md:px-10 xl:px-36 py-6">
                 <Logo />
 
-                {/* Desktop Navigation */}
                 <nav className="hidden lg:flex items-center gap-8 text-sm font-medium">
                     <Link to="/" className={`${isActiveLink('/')}`}>Home</Link>
                     <Link to="/about" className={`${isActiveLink('/about')}`}>About Us</Link>
@@ -49,7 +47,6 @@ const Header = () => {
                     </svg>
                 </button>
 
-                {/* Sidebar for Mobile */}
                 <div
                     className={`lg:hidden block fixed inset-y-0 right-0 z-40 w-full bg-black opacity-50 transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
                         } transition-transform duration-300 ease-in-out`}

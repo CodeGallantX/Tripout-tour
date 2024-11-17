@@ -10,7 +10,7 @@ const Header = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
 
-    const isActiveLink = (path) => location.pathname === path ? 'text-[#F7921E]' : 'text-gray-800';
+    const isActiveLink = (path) => location.pathname === path ? 'text-[#F7921E]' : 'text-gray-700';
 
     return (
         <div>
@@ -42,7 +42,7 @@ const Header = () => {
                 </div>
 
                 <button onClick={toggleSidebar} className="lg:hidden ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="fill-white" viewBox="0 0 256 256">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="fill-[#24201D]" viewBox="0 0 256 256">
                         <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
                     </svg>
                 </button>
