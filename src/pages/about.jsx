@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import AboutIntro from '../components/AboutIntro';
+import TrendingDestinations from '../components/TrendingDestinations';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import About from '../components/About';
@@ -20,6 +21,7 @@ const App = () => {
             <Header />
             <Banner page={page}/>
             <AboutIntro />
+            <TrendingDestinations />
             <About />
             <Process />
             <Digital />
