@@ -2,7 +2,7 @@ import members from '../data/team.json';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa6';
 
-const TrendingDestinations = () => {
+const Team = () => {
     return (
         <div>
             <section id="aboutIntro" className="px-10 xl:px-36 py-20">
@@ -59,4 +59,4 @@ const TrendingDestinations = () => {
     );
 };
 
-export default TrendingDestinations;
+export default Team;
