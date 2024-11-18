@@ -21,9 +21,11 @@ const TrendingDestinations = () => {
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                                 {members.map((member, index) => (
                                     <div key={index} className="relative group">
-                                        <div className="relative flex flex-col items-center cursor-pointer justify-center p-10 rounded-xl border border-gray-400 gap-1 hover:shadow-lg transition-all duration-300 ease-in-out">
-                                            <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full" />
-                                            <h3 className="font-serif font-bold text-xl text-center">{member.name}</h3>
+                                        <div className="relative flex flex-col items-center cursor-pointer justify-center py-6 px-8 rounded-xl border border-gray-400 hover:shadow-lg transition-all duration-300 ease-in-out">
+                                            <div className="w-52 h-52">
+                                            <img src={member.image} alt={member.name} className="w-full h-full object-cover object-center rounded-full" />
+                                            </div>
+                                            <h3 className="font-serif font-bold text-xl text-center mt-6">{member.name}</h3>
                                             <span className="text-sm text-gray-700 text-center">{member.role}</span>
 
                                             <div className="absolute bg-black opacity-0 w-1/4 h-1/4 group-hover:opacity-80 group-hover:w-full group-hover:h-full flex flex-col justify-center items-center gap-4 transition-all duration-300 rounded-xl">
