@@ -32,17 +32,17 @@ const TrendingDestinations = () => {
                                                 <div className="flex gap-4 z-20">
                                                     {member.linkedin && (
                                                         <Link to={member.linkedin} className="text-white translate-y-10 group-hover:translate-y-0 transition-all duration-500 delay-50 ease-in-out ">
-                                                            <FaLinkedin size={24} />
+                                                            <FaLinkedin size={24} className="hover:text-[#f7921e] transition-all duration-200 ease-in-out" />
                                                         </Link>
                                                     )}
                                                     {member.facebook && (
                                                         <Link to={member.facebook} className="text-white translate-y-10 group-hover:translate-y-0 transition-all duration-500 delay-100 ease-in-out ">
-                                                            <FaFacebook size={24} />
+                                                            <FaFacebook size={24} className="hover:text-[#f7921e] transition-all duration-200 ease-in-out" />
                                                         </Link>
                                                     )}
                                                     {member.instagram && (
                                                         <Link to={member.instagram} className="text-white translate-y-10 group-hover:translate-y-0 transition-all duration-500 delay-200 ease-in-out ">
-                                                            <FaInstagram size={24} />
+                                                            <FaInstagram size={24} className="hover:text-[#f7921e] transition-all duration-200 ease-in-out" />
                                                         </Link>
                                                     )}
                                                 </div>
