@@ -14,10 +14,10 @@ const TrendingDestinations = () => {
                             <h2 className="xl:text-5xl md:text-4xl text-3xl font-bold font-serif text-center">Explore the World; Adventure Awaits</h2>
                         </div>
                         <div>
-                            <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-4 gap-4 w-full">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
                                 {trends.map((destination, index) => (
                                     <div key={index}>
-                                        <div className="group flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 py-4 px-6 min-w-lg border border-gray-400 hover:bg-white rounded-xl hover:border-none hover:shadow-lg cursor-pointer transition-all duration-200 ease">
+                                        <div className="w-full group flex flex-row items-center justify-start gap-8 py-4 px-6 border border-gray-400 hover:bg-white rounded-xl hover:border-none hover:shadow-lg cursor-pointer transition-all duration-200 ease">
                                             <div className=" w-24 h-24">
                                                 <img className="rounded-full w-full h-full object-cover object-center group-hover:ring-2 ring-[#f7921e] transition-all duration-300 ease-in-out" src={destination.image} alt={destination.name} />
                                             </div>
