@@ -49,7 +49,7 @@ const Team = () => {
       };
     return (
         <div>
-            <section id="aboutIntro" className="px-10 xl:px-36 py-20">
+            <section id="aboutIntro" className="px-10 xl:px-36 py-20 bg-amber-50">
                 <div className="flex flex-col gap-8">
                     <div className="flex flex-col items-center justify-between gap-6">
                         <div className="w-full flex flex-col items-center justify-center gap-4">
