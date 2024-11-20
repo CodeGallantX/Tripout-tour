@@ -36,9 +36,9 @@ const Testimonials = () => {
                     <h2 className="lg:text-5xl sm:text-4xl text-3xl font-bold font-serif">Unforgettable Traveller Stories & Reviews</h2>
                 </div>
 
-                <div className="flex flex-row items-start justify-between gap-6 space-x-10">
+                <div className="flex flex-col lg:flex-row items-start justify-between gap-6 space-x-10">
 
-                    <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-8">
+                    <div className="w-full grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-8">
                         {testimonials.map((testimonial, index) => (
                             <div 
                                 key={index} 
