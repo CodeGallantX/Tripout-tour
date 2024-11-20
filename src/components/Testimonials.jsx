@@ -38,12 +38,11 @@ const Testimonials = () => {
 
                 <div className="flex flex-col lg:flex-row items-start justify-between gap-6 space-x-10">
 
-                    {/* Image grid visible only on large screens */}
                     <div className="hidden lg:grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-8">
                         {testimonials.map((testimonial, index) => (
                             <div 
                                 key={index} 
-                                className={`w-24 h-24 rounded-full overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-110 ${activeIndex === index ? 'scale-125 border-4 border-[#F7921E]' : 'scale-90'}`}
+                                className={`w-24 h-24 rounded-full overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-110 ${activeIndex === index ? 'scale-125 border-2 border-[#F7921E]' : 'scale-90'}`}
                                 onClick={() => handleImageClick(index)}
                             >
                                 <img
@@ -55,12 +54,10 @@ const Testimonials = () => {
                         ))}
                     </div>
 
-                    {/* Testimonial slider section */}
                     <div className="w-full max-w-2xl p-10 lg:p-0">
                         <Slider ref={sliderRef} {...settings}>
                             {testimonials.map((testimonial, index) => (
                                 <div key={index} className="flex flex-col items-center text-left justify-start p-4 space-y-4">
-                                    {/* Image for smaller screens */}
                                     <div className="lg:hidden mb-6">
                                         <img
                                             src={testimonial.imageUrl}
