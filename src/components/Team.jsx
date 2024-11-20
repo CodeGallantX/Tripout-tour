@@ -9,7 +9,7 @@ const Team = () => {
     var settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
@@ -38,14 +38,14 @@ const Team = () => {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
                     dots: true,
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 960,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -77,10 +77,10 @@ const Team = () => {
 
     return (
         <div>
-            <section id="aboutIntro" className="px-10 xl:px-36 py-20 bg-amber-50">
+            <section id="aboutIntro" className="xl:px-36 py-20 bg-amber-50">
                 <div className="flex flex-col gap-8">
                     <div className="flex flex-col items-center justify-between gap-6">
-                        <div className="w-full flex flex-col items-center justify-center gap-4">
+                        <div className="w-full flex flex-col items-center justify-center gap-4 px-10">
                             <h4 className="font-bold text-[#F7921E] font-serif">
                                 <img src="/airplane.png" alt="icon" className="inline-block translate-y-0.5" />
                                 &nbsp; Team Members
@@ -90,7 +90,7 @@ const Team = () => {
                             </h2>
                         </div>
                         <div>
-                            <div className="grid grid-cols-1 gap-8">
+                            <div className="grid grid-cols-1 gap-8 px-4">
                                 <Slider {...settings}>
                                     {members.map((member, index) => (
                                         <div key={index} className="relative group px-4">
