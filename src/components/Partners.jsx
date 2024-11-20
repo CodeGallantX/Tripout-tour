@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Partners = () => {
     const settings = {
         dots: false,
+        arrows: false,
         infinite: true,
         speed: 2000,
         slidesToShow: 4,

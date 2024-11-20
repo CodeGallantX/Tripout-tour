@@ -36,13 +36,13 @@ const Testimonials = () => {
                     <h2 className="lg:text-5xl sm:text-4xl text-3xl font-bold font-serif">Unforgettable Traveller Stories & Reviews</h2>
                 </div>
 
-                <div className="flex flex-col lg:flex-row items-start justify-between gap-6 space-x-10">
+                <div className="flex flex-col md:flex-row items-start justify-between gap-6 space-x-10">
 
                     <div className="hidden lg:grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-8">
                         {testimonials.map((testimonial, index) => (
-                            <div 
-                                key={index} 
-                                className={`w-24 h-24 rounded-full overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-110 ${activeIndex === index ? 'scale-125 border-2 border-[#F7921E]' : 'scale-90'}`}
+                            <div
+                                key={index}
+                                className={`w-24 h-24 rounded-full overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-110 ${activeIndex === index ? 'scale-110 border border-[#F7921E]' : 'scale-75'}`}
                                 onClick={() => handleImageClick(index)}
                             >
                                 <img
@@ -54,22 +54,24 @@ const Testimonials = () => {
                         ))}
                     </div>
 
-                    <div className="w-full max-w-2xl p-10 lg:p-0">
+                    <div className="w-full lg:max-w-2xl">
                         <Slider ref={sliderRef} {...settings}>
                             {testimonials.map((testimonial, index) => (
-                                <div key={index} className="flex flex-col items-center text-left justify-start p-4 space-y-4">
+                                <div key={index} className="flex flex-col md:flex-row items-center text-left justify-start md:justify-between px-2">
                                     <div className="lg:hidden mb-6">
                                         <img
                                             src={testimonial.imageUrl}
                                             alt={testimonial.name}
-                                            className="w-24 h-24 rounded-full object-cover mx-auto"
+                                            className="w-52 h-52 rounded-2xl object-cover mx-auto"
                                         />
                                     </div>
-                                    <p className="text-gray-700 text-base font-serif">{testimonial.details}</p>
-                                    <h3 className={`text-xl font-bold font-serif mt-3 ${activeIndex === index ? 'text-[#F7921E]' : 'text-gray-900'}`}>
-                                        {testimonial.name}
-                                    </h3>
-                                    <span className="text-gray-600 text-sm font-serif">{testimonial.role}</span>
+                                    <div>
+                                        <p className="text-gray-700 text-base font-serif">{testimonial.details}</p>
+                                        <h3 className={`text-xl font-bold font-serif mt-3 ${activeIndex === index ? 'text-[#F7921E]' : 'text-gray-900'}`}>
+                                            {testimonial.name}
+                                        </h3>
+                                        <span className="text-gray-600 text-sm font-serif">{testimonial.role}</span>
+                                    </div>
                                 </div>
                             ))}
                         </Slider>
