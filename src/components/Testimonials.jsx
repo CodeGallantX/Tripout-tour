@@ -16,6 +16,9 @@ const Testimonials = () => {
                   <span className="text-gray-600 text-sm font-serif">{testimonial.role}</span>
               </div>
               ))}
+              <div>
+                Quotes
+              </div>
           </section>
       </div>
   )
