@@ -38,7 +38,8 @@ const Testimonials = () => {
 
                 <div className="flex flex-col lg:flex-row items-start justify-between gap-6 space-x-10">
 
-                    <div className="w-full grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-8">
+                    {/* Image grid only visible on larger screens */}
+                    <div className="hidden lg:grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-8">
                         {testimonials.map((testimonial, index) => (
                             <div 
                                 key={index} 
@@ -54,10 +55,19 @@ const Testimonials = () => {
                         ))}
                     </div>
 
+                    {/* Testimonial Slider with Image for smaller screens */}
                     <div className="w-full max-w-2xl">
                         <Slider ref={sliderRef} {...settings}>
                             {testimonials.map((testimonial, index) => (
                                 <div key={index} className="flex flex-col items-center text-left justify-start p-4">
+                                    {/* Image inside the testimonial for smaller screens */}
+                                    <div className="lg:hidden mb-4">
+                                        <img
+                                            src={testimonial.imageUrl}
+                                            alt={testimonial.name}
+                                            className="w-24 h-24 rounded-full object-cover"
+                                        />
+                                    </div>
                                     <p className="text-gray-600 text-sm font-serif">{testimonial.details}</p>
                                     <h3 className="text-xl font-bold font-serif mt-3">{testimonial.name}</h3>
                                     <span className="text-gray-600 text-sm font-serif">{testimonial.role}</span>
