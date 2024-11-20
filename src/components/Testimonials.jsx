@@ -46,7 +46,7 @@ const Testimonials = () => {
                                 onClick={() => handleImageClick(index)}
                             >
                                 <img
-                                    src={`/images/testifier-${index + 1}.jpg`} 
+                                    src={testimonial.imageUrl}
                                     alt={testimonial.name}
                                     className="w-full h-full object-cover cursor-pointer"
                                 />

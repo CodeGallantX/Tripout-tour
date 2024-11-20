@@ -1,52 +1,62 @@
 [
     {
-        "name": "Sarah Johnson",
-        "details": "My trip was an absolute dream! From the seamless booking process to the carefully curated itinerary, everything was top-notch. The guides were knowledgeable, and the local experiences were authentic. It was a perfect balance of adventure and relaxation. I can't wait to book my next journey with them!",
-        "role": "Tourist Travelled"
+        "name": "The Adetutus",
+        "details": "Our trip was an absolute dream! From the seamless booking process to the carefully curated itinerary, everything was top-notch. The guides were knowledgeable, and the local experiences were authentic. It was a perfect balance of adventure and relaxation. We can't wait to book our next journey with them!",
+        "role": "Tourist Travelled",
+        "imageUrl": "https://media.istockphoto.com/id/807410214/photo/family-posing-for-selfie-next-to-car-packed-for-road-trip.jpg?s=612x612&w=0&k=20&c=jFU2u2TNn9k_Yq4u5yE3Cj173D5AsRg9uLWQ7EdO8iE="
     },
     {
-        "name": "James Smith",
+        "name": "David Itodo",
         "details": "I had the best vacation of my life! Every day brought something new and exciting. The trip organizers were always there to assist, ensuring everything went smoothly. The destinations were breathtaking, and the memories I made will last forever. I'll definitely be back for more!",
-        "role": "Traveler Enthusiast"
+        "role": "Traveler Enthusiast",
+        "imageUrl": "https://media.istockphoto.com/id/2168420490/photo/a-selfie-with-nature.jpg?s=612x612&w=0&k=20&c=3PwE6yFRXOOE4J555sIYlDKiPl0XK65pcGeuFyVMdsg="
     },
     {
         "name": "Yemi Davis",
         "details": "A truly unforgettable experience! The whole trip was meticulously planned, and every activity was both fun and enriching. I appreciated how the team took care of every detail, from accommodation to local tours. It was the perfect mix of culture and adventure. Highly recommended!",
-        "role": "Adventurous Explorer"
+        "role": "Adventurous Explorer",
+        "imageUrl": "https://media.istockphoto.com/id/807410646/photo/young-couple-pose-for-holiday-selfie-on-clifftop.jpg?s=612x612&w=0&k=20&c=FVdiBYomuANiCkqoHmHzhEyZyx1RNGZ8g-mIUM-CEco="
     },
     {
         "name": "Michael Brown",
         "details": "An absolutely wonderful journey! The team provided exceptional service throughout the trip. Every moment was enjoyable, and the variety of activities catered to every type of traveler. From exploring local markets to relaxing at luxurious resorts, it was a perfect vacation.",
-        "role": "Luxury Traveler"
+        "role": "Luxury Traveler",
+        "imageUrl": "https://media.istockphoto.com/id/1049844208/photo/its-summertime-treat-yourselves-to-a-vacation.jpg?s=612x612&w=0&k=20&c=3d3R3Ecbqj-iFlA4WkSfyA6zrrH_2ZF-WWLEtnSsF94="
     },
     {
         "name": "Jessica Williams",
         "details": "This was by far the best vacation I've had in years! The trip was perfectly balanced, and I loved the mix of relaxation and adventure. The tour guides were friendly and knowledgeable, making each excursion enjoyable. I can't wait to plan my next getaway with them.",
-        "role": "Adventure Seeker"
+        "role": "Adventure Seeker",
+        "imageUrl": "https://media.istockphoto.com/id/1486674561/photo/young-woman-taking-a-selfie.jpg?s=612x612&w=0&k=20&c=ZbH8PakbBL8UAFhvsFSRAWXJakqz92UgnFFxRC3ucj0="
     },
     {
         "name": "Temitope Wilson",
         "details": "The experience exceeded all my expectations. The attention to detail was incredible, and the destinations were beyond stunning. I loved how everything was so well-organized, allowing me to focus on enjoying my trip. I’ll be recommending this to all my friends!",
-        "role": "Explorer at Heart"
+        "role": "Explorer at Heart",
+        "imageUrl": "https://media.istockphoto.com/id/895507070/photo/two-cuban-friends-taking-selfie-with-his-mobile.jpg?s=612x612&w=0&k=20&c=420MH20--qno_P4_fJsZqVYfEAB36anYJ4ahX3ie9Cw="
     },
     {
         "name": "Esther Ikechukwu",
         "details": "What an amazing experience! The itinerary was perfect, and everything was so well-planned. From thrilling adventures to quiet moments of relaxation, every part of the journey was exceptional. The team went above and beyond to ensure a seamless vacation. Highly recommend!",
-        "role": "Family Vacationer"
+        "role": "Family Vacationer",
+        "imageUrl": "https://media.istockphoto.com/id/1391794638/photo/portrait-of-beautiful-woman-making-selfie-in-the-municipal-market.jpg?s=612x612&w=0&k=20&c=V1VvogWmSEGC4s6Tj3PrxJUPbaSl6Tm7nP-bevfSS3w="
     },
     {
         "name": "Liam Martinez",
         "details": "A dream come true! The trip was unforgettable, from the stunning landscapes to the engaging cultural activities. I felt well taken care of throughout the journey, and every moment was filled with joy. I can’t wait for my next adventure with this team!",
-        "role": "Cultural Explorer"
+        "role": "Cultural Explorer",
+        "imageUrl": "https://media.istockphoto.com/id/911812356/photo/smiling-african-guy-on-top-of-a-mountain-taking-selfie.jpg?s=612x612&w=0&k=20&c=W-P04SH9IlwrYXIpLt7WoVZw4MstWgBTsEqmwGMJUpM="
     },
     {
         "name": "Akua Akomado",
         "details": "I couldn't have asked for a better vacation. The team ensured everything was perfect, from the smooth check-in to the exciting excursions. Every experience exceeded my expectations, and I came back with unforgettable memories. It truly was a once-in-a-lifetime experience.",
-        "role": "Solo Traveler"
+        "role": "Solo Traveler",
+        "imageUrl": "https://media.istockphoto.com/id/1325279805/photo/happy-black-woman-and-her-impaired-boyfriend-in-wheelchair-taking-selfie-together-hugging-at.jpg?s=612x612&w=0&k=20&c=rj36eU9tgBff078U3CXBXA4JVt8_leAiYgEINKyxyzo="
     },
     {
         "name": "Alh. Musa Tanko",
         "details": "This trip was absolutely phenomenal! The guides were amazing, and the activities were tailored to fit every traveler’s needs. The experiences we had were unique, and I felt fully immersed in the local culture. This was a trip of a lifetime, and I look forward to booking again soon!",
-        "role": "Luxury Adventure Traveler"
+        "role": "Luxury Adventure Traveler",
+        "imageUrl": "https://media.istockphoto.com/id/1746669924/photo/african-american-man-ready-for-the-morning-rush-traffic-situation-using-smartphone-while.jpg?s=612x612&w=0&k=20&c=orJ8lATvjW7Nps1cbb7WPyRgyHFolo4TFmj2ZVlelso="
     }
 ]
