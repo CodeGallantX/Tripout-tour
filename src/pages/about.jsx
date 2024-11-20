@@ -5,6 +5,7 @@ import Banner from '../components/Banner';
 import Team from '../components/Team';
 import Testimonials from '../components/Testimonials';
 import Partners from '../components/Partners';
+import BlogSection from '../components/BlogSection';
 import OfferBanner from '../components/OfferBanner';
 import Digital from '../components/Digital';
 import Footer from '../components/Footer';
@@ -27,6 +28,7 @@ const App = () => {
             <Team />
             <Testimonials />
             <Partners />
+            <BlogSection />
             <OfferBanner />
             <Digital />
             <Footer />
