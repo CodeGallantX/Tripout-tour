@@ -45,7 +45,7 @@ const Team = () => {
                 }
             },
             {
-                breakpoint: 960,
+                breakpoint: 1000,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -77,7 +77,7 @@ const Team = () => {
 
     return (
         <div>
-            <section id="aboutIntro" className="xl:px-36 py-20 bg-amber-50">
+            <section id="aboutIntro" className="xl:px-36 py-20">
                 <div className="flex flex-col gap-8">
                     <div className="flex flex-col items-center justify-between gap-6">
                         <div className="w-full flex flex-col items-center justify-center gap-4 px-10">
@@ -90,7 +90,7 @@ const Team = () => {
                             </h2>
                         </div>
                         <div>
-                            <div className="grid grid-cols-1 gap-8 px-4">
+                            <div className="grid grid-cols-1 gap-8 px-4 overflow-hidden">
                                 <Slider {...settings}>
                                     {members.map((member, index) => (
                                         <div key={index} className="relative group px-4">

@@ -25,11 +25,11 @@ const App = () => {
             <Banner page={page}/>
             <AboutIntro />
             <TrendingDestinations />
+            <OfferBanner />
             <Team />
             <Testimonials />
             <Partners />
             <BlogSection />
-            <OfferBanner />
             <Digital />
             <Footer />
         </div>
