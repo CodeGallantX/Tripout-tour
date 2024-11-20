@@ -51,6 +51,12 @@ const BlogSection = () => {
 
     return (
         <div className="px-6 lg:px-36 py-20">
+            <div className="w-full flex flex-col items-center justify-center gap-4">
+                            <h4 className="font-bold text-[#F7921E] font-serif">
+                                <img src="/airplane.png" alt="icon" className="inline-block translate-y-0.5" />
+                                &nbsp; Blog</h4>
+                            <h2 className="xl:text-5xl md:text-4xl text-3xl font-bold font-serif text-center">Stay Updated and Knowledgeable</h2>
+                        </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 <div className="">
                     <BlogSectionList blog={introBlog} showIntro={true} layout="flex-col" />
