@@ -50,8 +50,8 @@ const BlogSection = () => {
     const [introBlog, ...otherBlogs] = blogs;
 
     return (
-        <div className="px-6 lg:px-36 py-20">
-            <div className="w-full flex flex-col items-center justify-center gap-4">
+        <div className="px-6 lg:px-36 py-20 space-y-6">
+            <div className="w-full flex flex-col items-center justify-center gap-3">
                             <h4 className="font-bold text-[#F7921E] font-serif">
                                 <img src="/airplane.png" alt="icon" className="inline-block translate-y-0.5" />
                                 &nbsp; Blog</h4>
